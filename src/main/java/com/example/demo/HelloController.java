@@ -10,4 +10,9 @@ public class HelloController {
     public String home() {
         return "🚀 Spring Boot App on Render using Docker!";
     }
+
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "Hello, World!";
+    }
 }
